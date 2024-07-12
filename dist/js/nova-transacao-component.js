@@ -28,5 +28,6 @@ elementoFormulario.addEventListener("submit", function (event) {
         data: data
     };
     console.log(novaTransacao);
+    console.log(formatarInformacoes(novaTransacao.valor, novaTransacao.data, novaTransacao.tipoTransacao, FormatoData.DIA_SEMANA_DIA_MES_ANO));
     elementoFormulario.reset();
 });
