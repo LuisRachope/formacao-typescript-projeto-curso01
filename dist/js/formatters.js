@@ -18,3 +18,8 @@ function formatarData(data, formato = FormatoData.PADRAO) {
     }
     return data.toLocaleDateString("pt-br");
 }
+function formatarInformacoes(valor, data, tipoTransacao, formatoData = FormatoData.PADRAO) {
+    const dataFormatada = formatarData(data, formatoData);
+    const valorFormatado = formatarMoeda(valor);
+    return `[${tipoTransacao}] ${dataFormatada} - ${valorFormatado}`;
+}
