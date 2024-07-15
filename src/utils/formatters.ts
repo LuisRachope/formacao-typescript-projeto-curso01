@@ -22,9 +22,3 @@ export function formatarData(data: Date, formato: FormatoData = FormatoData.PADR
     
     return data.toLocaleDateString("pt-br");
 }
-
-export function formatarInformacoes(valor: number, data: Date, tipoTransacao: TipoTransacao, formatoData: FormatoData = FormatoData.PADRAO): string {
-    const dataFormatada = formatarData(data, formatoData);
-    const valorFormatado = formatarMoeda(valor);
-    return `[${tipoTransacao}] ${dataFormatada} - ${valorFormatado}`;
-}
