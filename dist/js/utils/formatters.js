@@ -1,7 +1,8 @@
-function formatarMoeda(valor) {
+import { FormatoData } from "../types/FormatoData";
+export function formatarMoeda(valor) {
     return valor.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 }
-function formatarData(data, formato = FormatoData.PADRAO) {
+export function formatarData(data, formato = FormatoData.PADRAO) {
     if (formato === FormatoData.DIA_SEMANA_DIA_MES_ANO) {
         return data.toLocaleDateString("pt-br", {
             weekday: "long",
@@ -18,7 +19,7 @@ function formatarData(data, formato = FormatoData.PADRAO) {
     }
     return data.toLocaleDateString("pt-br");
 }
-function formatarInformacoes(valor, data, tipoTransacao, formatoData = FormatoData.PADRAO) {
+export function formatarInformacoes(valor, data, tipoTransacao, formatoData = FormatoData.PADRAO) {
     const dataFormatada = formatarData(data, formatoData);
     const valorFormatado = formatarMoeda(valor);
     return `[${tipoTransacao}] ${dataFormatada} - ${valorFormatado}`;
