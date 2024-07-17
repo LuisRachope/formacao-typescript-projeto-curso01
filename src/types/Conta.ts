@@ -59,6 +59,34 @@ const Conta = {
         return gruposTransacoes;
     },
 
+    agruparTransacoes(): ResumoTransacoes {
+        const resumo: ResumoTransacoes = { 
+        totalDepositos: 0, 
+        totalTransferencias: 0, 
+        totalPagamentosBoleto: 0 
+        };
+        
+        const listaTransacoes: Transacao[] = structuredClone(transacoes);
+
+        listaTransacoes.forEach(transacao => {
+            switch (transacao.tipoTransacao) {
+                case TipoTransacao.DEPOSITO:
+                    resumo.totalDepositos += transacao.valor;
+                    break;
+    
+                case TipoTransacao.TRANSFERENCIA:
+                    resumo.totalTransferencias += transacao.valor;
+                    break;
+    
+                case TipoTransacao.PAGAMENTO_BOLETO:
+                    resumo.totalPagamentosBoleto += transacao.valor;
+                    break;
+            }
+        });
+        console.log(resumo);
+        return resumo;
+    },
+
     regisrarTransacao(novaTransacao: Transacao): void {
         if (novaTransacao.tipoTransacao == TipoTransacao.DEPOSITO){
             depositar(novaTransacao.valor);
