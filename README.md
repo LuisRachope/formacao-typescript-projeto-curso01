@@ -21,5 +21,6 @@ cd caminho/para/seu/projeto
 http-server
 ```
 
+
 Link do Curso - Alura:
 https://cursos.alura.com.br/course/typescript-pratica-projeto-completo-typescript-modulos
