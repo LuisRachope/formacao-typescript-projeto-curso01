@@ -24,6 +24,7 @@ elementoFormulario.addEventListener("submit", function (event) {
         SaldoComponent.atualizar();
         ExtratoComponent.atualizar();
         elementoFormulario.reset();
+        Conta.agruparTransacoes();
     }
     catch (erro) {
         alert(erro.message);

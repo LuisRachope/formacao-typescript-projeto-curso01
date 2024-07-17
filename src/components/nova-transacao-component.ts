@@ -28,11 +28,11 @@ elementoFormulario.addEventListener("submit", function(event) {
             valor: valor,
             data: data
         }
-
         Conta.regisrarTransacao(novaTransacao);
         SaldoComponent.atualizar();
         ExtratoComponent.atualizar();
         elementoFormulario.reset();
+        Conta.agruparTransacoes();
     }
     catch(erro) {
         alert(erro.message);
