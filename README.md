@@ -2,34 +2,23 @@
 Projeto de Formação TypeScript: Projeto final do Curso 01 - Curso Alura de TypeScript Front-end
 
 Instruções de uso da Aplicação:
-* 01 - Instalar o "Live Server" no VsCode e executar o arquivo "i"ndex.html" através dele para visualizar o projeto;
-* 02 - Pode ser que seja necessários instalar o typescript se estiver usando um ambiente que não possua ele, siga os comandos abaixo de instalação.
 
-Instrução instalão Ubunto (WSL):
-```bash
-sudo apt update
+Opção via VsCode:
+* 01 - Instalar o "Live Server" no VsCode e executar o arquivo "index.html" através dele para visualizar o projeto em execução no navegador de sua preferência;
+* 02 - Pode ser que seja necessários instalar o typescript se estiver usando um ambiente que não possua ele.
 
-```
+Opção direto no promt de comando:
+* 01 - Instale o http-server globalmente:
 ```bash
-npm install -g typescript
+npm install -g http-server
 ```
+* 02 - Navegue até o diretório do seu projeto no prompt de comando:
 ```bash
-sudo apt install nodejs npm
+cd caminho/para/seu/projeto
 ```
+* 03 - Inicie o servidor (geralmente irá gerar em: http://localhost:8080):
 ```bash
-export PATH=$PATH:/usr/local/bin/node
-```
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-```
-```bash
-nvm install node
-```
-```bash
-nvm use node
-```
-```bash
-nvm alias default node
+http-server
 ```
 
 Link do Curso - Alura:
