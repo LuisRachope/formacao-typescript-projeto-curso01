@@ -13,3 +13,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 nvm install node
 nvm use node
 nvm alias default node
+
+Link do Curso - Alura:
+https://cursos.alura.com.br/course/typescript-pratica-projeto-completo-typescript-modulos
