@@ -1,8 +1,8 @@
 # formacao-typescript-projeto-curso01
 Projeto de Formação TypeScript: Projeto final do Curso 01 - Curso Alura de TypeScript Front-end
-
+</br>
 Instruções de uso da Aplicação:
-
+</br>
 Opção via VsCode:
 * 01 - Instalar o "Live Server" no VsCode e executar o arquivo "index.html" através dele para visualizar o projeto em execução no navegador de sua preferência;
 * 02 - Pode ser que seja necessários instalar o typescript se estiver usando um ambiente que não possua ele.
